@@ -1,7 +1,6 @@
 //design code 
 ---
 
-// rtl/fifo_async.sv
 // Parameterized Asynchronous FIFO (Gray pointers + 2-flop synchronizers)
 // Depth = 2**ADDR_WIDTH
 
