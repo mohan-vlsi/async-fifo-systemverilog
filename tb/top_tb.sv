@@ -34,7 +34,20 @@ module top_tb;
         .rempty(vif.rempty)
 
     );
+fifo_assertions assertions_inst
+(
+    .wclk   (vif.wclk),
+    .rclk   (vif.rclk),
 
+    .wrst_n (vif.wrst_n),
+    .rrst_n (vif.rrst_n),
+
+    .winc   (vif.winc),
+    .rinc   (vif.rinc),
+
+    .wfull  (vif.wfull),
+    .rempty (vif.rempty)
+);
     //-----------------------------------------
     // Test
     //-----------------------------------------
